@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './WorkShopSection.module.css';
+import styles from './WorkshopSection.module.css';
 
 const WorkShopSection = () => {
   return (
