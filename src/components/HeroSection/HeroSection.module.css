@@ -1,0 +1,186 @@
+.hero {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Adds some depth */
+  background: linear-gradient(135deg, #007bff, #00d4a7); /* Bright and energetic gradient */
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Keep it white for contrast */
+}
+
+.description {
+  font-size: 24px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #f8f9fc; /* Light color for better readability */
+}
+
+.registerButton {
+  margin-top: 30px;
+  padding: 14px 25px;
+  background: #28a745; /* Green for a fresh look */
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registerButton:hover {
+  background: #218838; /* Darker green on hover */
+  transform: translateY(-3px);
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Video Section */
+.videoSection {
+  flex: 1 1 100%;
+  max-width: 800px;
+}
+
+.video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Content Section */
+.leftContent {
+  flex: 1 1 45%;
+}
+
+/* Timing Section */
+.timing {
+  background-color: #f1f1f1; /* Light gray for better readability */
+  padding: 15px; /* Reduced padding */
+  border-radius: 12px;
+  margin: 20px auto; /* Centered with auto margin */
+  width: 60%; /* Adjusted width to make it smaller */
+  text-align: center; /* Ensures content is centered */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center; /* Centers grid items horizontally */
+}
+
+.timing li {
+  background: #007bff; /* Bright blue for emphasis */
+  padding: 8px 12px; /* Reduced padding for compactness */
+  color: #fff;
+  font-size: 24px; /* Reduced font size */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlights {
+  color: #fff;
+  text-align: left;
+}
+
+.highlightsTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlights li {
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.highlights li::before {
+  content: "✅ ";
+  color: #28a745; /* Green check marks for positivity */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .registerButton {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoSection,
+  .leftContent {
+    width: 100%;
+  }
+
+  .timing {
+    width: 80%; /* Adjusted for smaller screens */
+  }
+
+  .timing li {
+    font-size: 14px; /* Smaller font size for responsiveness */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .registerButton {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .highlights li {
+    font-size: 16px;
+  }
+
+  .timing {
+    width: 90%; /* Adjusted for mobile screens */
+  }
+
+  .timing li {
+    font-size: 12px; /* Further reduced font size for small devices */
+  }
+}

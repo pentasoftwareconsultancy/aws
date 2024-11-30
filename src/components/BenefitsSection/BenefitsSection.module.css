@@ -1,0 +1,146 @@
+.Title {
+  color: #ff5722; /* Bright color to grab attention */
+  font-size: 40px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+}
+
+/* Container for Cards */
+.Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between the cards */
+  padding: 0 20px; /* Padding for spacing */
+}
+
+/* Card Styling */
+.Card {
+  background-color: #fff;
+  border-radius: 15px; /* Rounder corners for a softer look */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Card:hover {
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Card Title */
+.CardTitle {
+  font-size: 24px; /* Slightly larger title */
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase; /* Make the title stand out */
+}
+
+/* Card Content */
+.CardContent {
+  font-size: 22px;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify; /* Clean presentation */
+}
+
+/* Price Section */
+.priceText {
+  font-size: 24px; /* Larger font size for better readability */
+  height: 60px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px; /* Space below the paragraph */
+  background: #ff5722; /* Highlighting the offer with a bright background */
+  color: white; /* White text inside the price box */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+  animation: zoomInOut 2s ease-in-out infinite; /* Apply the animation */
+}
+
+.price {
+  font-size: 36px; /* Highlight the price even more */
+  color: #fff; /* White color for the price */
+  font-weight: bold; /* Emphasize the price */
+  animation: zoomInOut 2s ease-in-out infinite; /* Apply the animation */
+}
+
+/* Zoom In/Out Animation */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
+/* Info Section */
+.Info {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Slight letter spacing for more impact */
+}
+
+/* Responsive Design for Medium Screens */
+@media (max-width: 768px) {
+  .Container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 15px; /* Reduced gap on smaller screens */
+  }
+
+  .CardTitle {
+    font-size: 20px; /* Adjust title font size */
+  }
+
+  .CardContent {
+    font-size: 16px; /* Adjust content font size */
+  }
+
+  .priceText {
+    font-size: 18px; /* Adjust price text size */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .Container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    padding: 0 10px; /* Adjust container padding */
+  }
+
+  .Title {
+    font-size: 30px; /* Adjust title font size */
+  }
+
+  .CardTitle {
+    font-size: 18px; /* Further adjust card title font size */
+  }
+
+  .CardContent {
+    font-size: 14px; /* Further reduce content font size */
+  }
+
+  .priceText {
+    font-size: 16px; /* Adjust price text size */
+  }
+}

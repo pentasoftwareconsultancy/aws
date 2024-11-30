@@ -1,0 +1,16 @@
+.payment {
+    text-align: center;
+    padding: 30px;
+    background: #f9f9fa;
+  }
+  
+  .payButton {
+    padding: 10px 20px;
+    background: #1b79e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

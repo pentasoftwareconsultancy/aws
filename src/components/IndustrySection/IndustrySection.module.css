@@ -1,0 +1,67 @@
+.industrySection {
+  padding: 0px 30px; /* Adds padding for spacing */
+  text-align: center; /* Centers the text */
+  border-radius: 15px; /* Rounded corners for the section */
+}
+
+.Title {
+  color: #ff5722; /* Bright color to grab attention */
+  font-size: 40px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 30px; /* Spacing between cards */
+  margin-top: 20px; /* Space above the cards */
+}
+
+.card {
+  padding: 20px; /* Padding inside the card */
+  background: white; /* White background for each card */
+  border-radius: 10px; /* Rounded corners for each card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around each card */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+}
+
+.card h3 {
+  font-size: 24px; /* Heading size inside cards */
+  color: #34495e; /* Dark color for headings */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.card p {
+  font-size: 24px; /* Font size for paragraph text */
+  color: #555; /* Lighter text color */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  .Title {
+    font-size: 30px; /* Adjust title size */
+  }
+
+  .card h3 {
+    font-size: 20px; /* Adjust card heading size */
+  }
+
+  .card p {
+    font-size: 14px; /* Adjust paragraph text size */
+  }
+}

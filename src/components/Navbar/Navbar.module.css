@@ -1,0 +1,72 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1b79e5; /* Blue color for the navbar */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+  transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+/* Logo style */
+.logo h1 {
+  color: white;
+  font-size: 36px; /* Larger font size for better visibility */
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px; /* Adds a bit of spacing for elegance */
+  text-transform: uppercase; /* Capitalizes the logo text for emphasis */
+}
+
+/* Navbar link styling */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  display: inline;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transition for scale effect */
+  padding: 10px 15px; /* Adds padding to the links */
+  border-radius: 5px; /* Rounds the corners of the links */
+}
+
+.navLinks a:hover {
+  color: #ff5722; /* Color on hover */
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+  background-color: rgba(255, 87, 34, 0.1); /* Soft background on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners for mobile */
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%; /* Ensure full-width alignment */
+  }
+
+  .navLinks a {
+    font-size: 16px;
+    padding: 12px 20px; /* Increase padding for mobile links */
+    width: 100%; /* Full-width links on smaller screens */
+    text-align: center; /* Centers the text */
+  }
+}

@@ -1,0 +1,79 @@
+.Title {
+  color: #ff5722; /* Bright color to grab attention */
+  font-size: 40px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.Card {
+  background-color: #fff;
+  border-radius: 15px; /* Slightly rounder corners for a softer feel */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for better depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card:hover {
+  transform: translateY(-5px); /* Hover effect to lift the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.CardTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase; /* Added for impact */
+}
+
+.CardContent {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.6; /* Improves readability */
+}
+
+.Quote {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-top: 40px;
+  font-style: italic; /* Adds emphasis to the quote */
+}
+
+@media (max-width: 768px) {
+  .Container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .Container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+
+  .Title {
+    font-size: 30px; /* Smaller title on small screens */
+  }
+
+  .CardTitle {
+    font-size: 20px;
+  }
+
+  .CardContent {
+    font-size: 16px;
+  }
+}

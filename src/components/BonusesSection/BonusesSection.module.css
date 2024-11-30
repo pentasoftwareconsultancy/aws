@@ -1,0 +1,156 @@
+.bonusesSection {
+  padding: 0px 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.Title {
+  color: #2c3e50;
+  font-size: 40px;
+  background-color: #f39c12; /* Vibrant background */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Slight lift for hover effect */
+}
+
+.cardTitle {
+  background: #e67e22; /* Orange background for card titles */
+  color: white;
+  padding: 12px;
+  width: 220px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 15px; /* Center the title */
+}
+
+.heading {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.freeOffer {
+  font-size: 24px;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.pricing {
+  background-color: #ecf0f1; /* Light background to highlight pricing */
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.priceText {
+  font-size: 24px; /* Larger font size for better readability */
+  height: 70px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px; /* Space below the paragraph */
+  background: #ff5722; /* Highlighting the offer with a bright background */
+  color: white; /* White text inside the price box */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+  animation: zoomInOut 2s ease-in-out infinite; /* Apply the animation */
+}
+
+.price {
+  font-size: 36px; /* Highlight the price even more */
+  color: #fff; /* White color for the price */
+  font-weight: bold; /* Emphasize the price */
+  animation: zoomInOut 2s ease-in-out infinite; /* Apply the animation */
+}
+
+/* Zoom In/Out Animation */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
+h4 {
+  font-size: 24px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.buyNow {
+  padding: 14px 30px; /* Increased padding for a larger button */
+  background: #1b79e5; /* Bright blue color for the button */
+  color: white; /* White text for contrast */
+  border: none;
+  border-radius: 30px; /* Fully rounded button */
+  font-size: 24px; /* Larger text for readability */
+  font-weight: bold; /* Bold font for emphasis */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+.buyNow:hover {
+  background: #155cbf; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  .Title {
+    font-size: 30px;
+  }
+
+  .cardTitle {
+    width: 180px; /* Adjust width for smaller screens */
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

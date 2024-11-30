@@ -1,0 +1,75 @@
+.container {
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.Title {
+  color: #2c3e50; /* Darker shade for a professional look */
+  font-size: 40px;
+  background-color: #f39c12; /* Warm, attention-grabbing color */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for the title box */
+}
+
+.description {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.certification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around the image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.callToAction {
+  font-size: 24px;
+  color: #e74c3c; /* Strong red for a sense of urgency */
+  font-weight: bold;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .Title {
+    font-size: 30px; /* Adjust title size for tablets */
+  }
+
+  .description {
+    font-size: 16px; /* Adjust description size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .Title {
+    font-size: 24px; /* Further adjust title size for small screens */
+  }
+
+  .description {
+    font-size: 14px; /* Adjust description size for very small screens */
+  }
+
+  .callToAction {
+    font-size: 18px; /* Adjust CTA font size for small screens */
+  }
+}

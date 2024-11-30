@@ -1,0 +1,13 @@
+.container {
+  font-family: Arial, sans-serif;
+  color: #ff4d00;
+  background-color: #f0f8ff; /* Soft background to give a fresh, calming feel */
+  text-align: center; /* Centers the container's content */
+}
+
+p {
+  font-size: 24px;
+  text-align: justify; /* Justifies the text within the <p> tag */
+  margin: 0 auto; /* Centers the paragraph within the parent */
+   /* Optional: Limits the paragraph's width for better readability */
+}

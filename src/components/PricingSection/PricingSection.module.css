@@ -1,0 +1,118 @@
+.pricing {
+  text-align: center; /* Center-aligns all content */
+  padding: 40px 20px; /* Increased padding for more space */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background for a fresh, vibrant feel */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px;
+  margin: 50px auto; /* Centers the pricing section */
+}
+
+.pricing h2 {
+  font-size: 36px; /* Larger font for the heading */
+  color: #fff; /* White text for better contrast */
+  margin-bottom: 15px; /* Space below the heading */
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Subtle text shadow for emphasis */
+}
+
+.priceText {
+  font-size: 24px; /* Larger font size for better readability */
+  height: 70px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px; /* Space below the paragraph */
+  background: #ff5722; /* Highlighting the offer with a bright background */
+  color: white; /* White text inside the price box */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+  animation: zoomInOut 2s ease-in-out infinite; /* Apply the animation */
+}
+
+.price {
+  font-size: 36px; /* Highlight the price even more */
+  color: #fff; /* White color for the price */
+  font-weight: bold; /* Emphasize the price */
+  animation: zoomInOut 2s ease-in-out infinite; /* Apply the animation */
+}
+
+.buyNow {
+  padding: 14px 30px; /* Increased padding for a larger button */
+  background: #f16e27; /* Bright blue color for the button */
+  color: white; /* White text for contrast */
+  border: none;
+  border-radius: 30px; /* Fully rounded button */
+  font-size: 24px; /* Larger text for readability */
+  font-weight: bold; /* Bold font for emphasis */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+.buyNow:hover {
+  background: #155cbf; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.other {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-top: 30px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.other p {
+  margin: 10px 0; /* Spacing between the text elements */
+}
+
+.other p:first-child {
+  font-size: 24px;
+  color: #ff5722; /* Highlighted text color for emphasis */
+}
+
+/* Zoom In/Out Animation */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pricing {
+    padding: 20px 10px; /* Reduced padding for mobile screens */
+    margin: 30px auto; /* Center the pricing section on smaller screens */
+  }
+
+  .priceText {
+    font-size: 18px; /* Smaller font size for price text */
+  }
+
+  .price {
+    font-size: 24px; /* Slightly smaller price font */
+  }
+
+  .buyNow {
+    padding: 12px 25px; /* Smaller button for mobile */
+    font-size: 18px; /* Smaller button text */
+  }
+
+  .other {
+    font-size: 16px; /* Smaller font for mobile */
+  }
+
+  .other p:first-child {
+    font-size: 18px;
+  }
+}
